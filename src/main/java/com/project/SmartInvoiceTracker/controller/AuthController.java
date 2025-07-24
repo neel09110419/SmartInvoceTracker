@@ -1,4 +1,4 @@
-package com.project.SmartInvoiceTracker.controller.auth;
+package com.project.SmartInvoiceTracker.controller;
 
 import com.project.SmartInvoiceTracker.dto.auth.AuthResponse;
 import com.project.SmartInvoiceTracker.dto.auth.LoginRequest;
