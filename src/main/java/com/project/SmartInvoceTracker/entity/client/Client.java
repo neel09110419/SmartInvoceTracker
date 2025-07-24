@@ -1,6 +1,8 @@
 package com.project.SmartInvoceTracker.entity.client;
 
 import jakarta.persistence.*;
+import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.NotNull;
 
 @Entity
 @Table(name = "CLIENT")
@@ -12,7 +14,10 @@ public class Client {
 
     private Long userId; // Owner of the client
 
+    @NotNull
     private String name;
+
+    @Email
     private String email;
     private String companyName;
     private String address;

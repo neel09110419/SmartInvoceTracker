@@ -15,7 +15,7 @@ public class Invoice {
     @Column(name = "userId")
     private Long userId;
 
-    private String invoceNumber;
+    private String invoiceNumber;
 
     @Column(name = "clientId")
     private Long clientId;
@@ -31,6 +31,7 @@ public class Invoice {
 
     private String currency;
 
+    @Enumerated(EnumType.STRING)
     private Status status; // PENDING, PAID, OVERDUE
 
     private String notes;
@@ -124,11 +125,11 @@ public class Invoice {
     }
 
     public String getInvoceNumber() {
-        return invoceNumber;
+        return invoiceNumber;
     }
 
     public void setInvoceNumber(String invoceNumber) {
-        this.invoceNumber = invoceNumber;
+        this.invoiceNumber = invoceNumber;
     }
 
     @Override
@@ -136,7 +137,7 @@ public class Invoice {
         return "Invoice{" +
                 "invoiceId=" + invoiceId +
                 ", userId=" + userId +
-                ", invoceNumber='" + invoceNumber + '\'' +
+                ", invoceNumber='" + invoiceNumber + '\'' +
                 ", clientId=" + clientId +
                 ", issueDate=" + issueDate +
                 ", dueDate=" + dueDate +
