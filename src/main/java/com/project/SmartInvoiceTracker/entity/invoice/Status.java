@@ -1,4 +1,4 @@
-package com.project.SmartInvoceTracker.entity.invoice;
+package com.project.SmartInvoiceTracker.entity.invoice;
 
 public enum Status {
     PENDING,

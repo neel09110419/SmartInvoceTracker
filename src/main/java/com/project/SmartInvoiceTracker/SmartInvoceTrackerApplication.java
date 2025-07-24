@@ -1,4 +1,4 @@
-package com.project.SmartInvoceTracker;
+package com.project.SmartInvoiceTracker;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

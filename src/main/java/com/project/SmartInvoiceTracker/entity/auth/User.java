@@ -1,4 +1,4 @@
-package com.project.SmartInvoceTracker.entity.auth;
+package com.project.SmartInvoiceTracker.entity.auth;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Email;
@@ -20,6 +20,16 @@ public class User {
 
     @NotNull
     private String name;
+
+    private double phoneNo;
+
+    public double getPhoneNo() {
+        return phoneNo;
+    }
+
+    public void setPhoneNo(double phoneNo) {
+        this.phoneNo = phoneNo;
+    }
 
     @Enumerated(EnumType.STRING)
     private Role role; // ADMIN or USER
@@ -71,7 +81,9 @@ public class User {
                 ", email='" + email + '\'' +
                 ", password='" + password + '\'' +
                 ", name='" + name + '\'' +
+                ", phoneNo=" + phoneNo +
                 ", role=" + role +
                 '}';
     }
+
 }

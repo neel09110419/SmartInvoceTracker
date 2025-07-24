@@ -1,4 +1,4 @@
-package com.project.SmartInvoceTracker.entity.client;
+package com.project.SmartInvoiceTracker.entity.client;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Email;
